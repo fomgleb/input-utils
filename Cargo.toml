@@ -1,7 +1,14 @@
 [package]
 name = "input-utils"
 version = "0.1.0"
+authors = ["fomgleb"]
+license-file = "LICENSE"
+readme = "README.md"
 edition = "2021"
+description = "Small package with console input utils"
+repository = "https://github.com/fomgleb/input-utils"
+keywords = ["console", "input"]
+documentation = "https://docs.rs/input-utils"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
