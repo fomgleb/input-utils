@@ -27,10 +27,11 @@ use std::{
 ///
 /// The function will panic if flushing stdout or reading from stdin fails.
 pub fn read_input<T: FromStr>(prompt: &str, err: &str) -> T {
+    let mut input = String::new();
     loop {
         print!("{}", prompt);
         io::stdout().flush().expect("Failed to flush stdout");
-        let mut input = String::new();
+        input.clear();
         io::stdin()
             .read_line(&mut input)
             .expect("Failed to read line");
